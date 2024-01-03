@@ -49,18 +49,21 @@ public abstract class Personnage {
 
     /**
      * methode pour attaquer l'adversaire
-     * @return le niveau de l'attaque envoyé par le personnage en integer
+     * @return le nombre de point que l'arme inflige
      */
-    public int attaquer(){
-        return 0;
-    };
+   /* public int attaquer(){
+        System.out.println(this.getNom() + " attaque ");
+        return this.getArme().getDegatsParAttaque();
+    };*/
 
     /**
      * methode pour soustraire des points de vies suite à une attaque subie
      * @return les dégats subits
      */
-public int pointDegatsInfliges(){
-    return this.getArme().getDegatsParAttaque();
+public void recevoirDesDegats(Personnage attaquant){
+    System.out.println(attaquant.getNom() + "("+attaquant.getPointDeVie()+ ") attaque ");
+    this.setPointDeVie(this.getPointDeVie()-attaquant.getArme().getDegatsParAttaque());
+    System.out.println("il reste " + this.getPointDeVie() + " points de vie pour " + this.getNom());
 }
 
     @Override

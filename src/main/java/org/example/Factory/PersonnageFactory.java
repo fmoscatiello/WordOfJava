@@ -10,7 +10,7 @@ public class PersonnageFactory {
      static String[] nomPersonnageHeros = {"Harry Potter","Legolas","Boba Fett","King Arthur",
     "Lancelot du Lac","KillerBee","Pikachu"};
 
-     static int[] pointDeVie = {60,75,55,64,47,18};
+     static int[] pointDeVie = {60,75,55,64,57,68};
 
     public static Heros genererHeros(){
        Heros heros = new Heros();

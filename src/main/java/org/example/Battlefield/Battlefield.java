@@ -41,8 +41,8 @@ public class Battlefield {
     }
 
     public static void commencerLeCombat() throws InterruptedException {
-        Equipe teamHeros = genererTeamHeros(5);
-        Equipe teamMonstre = genererTeamMonstre(8);
+        Equipe teamHeros = genererTeamHeros(4);
+        Equipe teamMonstre = genererTeamMonstre(2);
         Combattre.combatDeGroupe(teamHeros,teamMonstre);
     }
 
