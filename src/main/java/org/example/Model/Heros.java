@@ -11,21 +11,4 @@ public class Heros extends Personnage {
         super(pointDeVie,nom,arme);
     }
 
-
-    /**
-     * methode pour attaquer l'adversaire
-     *
-     * @return le niveau de l'attaque envoyé par le personnage en integer
-     */
-    @Override
-    public int attaquer() {
-        return 0;
-    }
-
-    /**
-     * methode pour soustraire des points de vies suite à une attaque subie
-     *
-     * @return les dégats subits
-     */
-
 }
